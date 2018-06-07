@@ -8,7 +8,7 @@ The json data loaded from Yahoo Weather perform the query with YQL.
 
 # Usage
 
-- the code is personalized in the city of Milan 
+- use the select box for choose any city
 - usable with XAMPP on Windows Platform or directly via Apache. Configure a simple vhosts as follow:
 
 `<VirtualHost *:80>`
@@ -27,7 +27,6 @@ The json data loaded from Yahoo Weather perform the query with YQL.
 
 # Todo and future update
 
- - search for an arbitrary city
  - save date on dashboard
 
 # Feedback 
