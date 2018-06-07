@@ -1,5 +1,4 @@
-# Hi What's the weather? Application
-
+# Hi What's the weather? 
 Simple and easy application for weather forecasting, with Yahoo Weather API and javascript.
 
 # Tech
