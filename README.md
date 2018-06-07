@@ -11,13 +11,13 @@ The json data loaded from Yahoo Weather perform the query with YQL.
 - the code is personalized in the city of Milan 
 - usable with XAMPP on Windows Platform or directly via Apache. Configure a simple vhosts as follow:
 
-"<VirtualHost *:80>
-    ServerAdmin yourfakemail@mailinator.com
-	ServerName weather.localhost
-    DocumentRoot "C:/path/to/your/htdocs/path-to-your-application"
-    ErrorLog "logs/your-app-host-error.log"
-    CustomLog "logs/your-app-host-access.log" common
-</VirtualHost>"
+`<VirtualHost *:80>`
+`ServerAdmin yourfakemail@mailinator.com`
+`ServerName weather.localhost`
+`DocumentRoot "C:/path/to/your/htdocs/path-to-your-application"`
+`ErrorLog "logs/your-app-host-error.log"`
+`CustomLog "logs/your-app-host-access.log" common`
+`</VirtualHost>`
 
 # Todo and future update
 
