@@ -5,6 +5,7 @@ Simple and easy application for weather forecasting, with Yahoo Weather API and 
 
 The page execute a simple query on the following endpoint: https://query.yahooapis.com/v1/public/yql?q=
 The json data loaded from Yahoo Weather perform the query with YQL.
+Update with a simple spinner for a better look & feel during interaction
 
 # Usage
 
