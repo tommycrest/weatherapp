@@ -14,8 +14,9 @@ function getWeatherCondition(el_value)  {
 			var forecast = data.query.results.channel.item.forecast;
 			$('#temp').html("Today in "+city+" the temperature is " + data.query.results.channel.item.condition.temp + "°C"+" with "+data.query.results.channel.item.condition.text);
 			for( var index = 0; index < forecast.length; index++ ) {
-				$('#'+index).html(forecast[index].date + " " + "High: "+forecast[index].high+" Low: "+forecast[index].low+" Condition: "+forecast[index].text);
-			}
+				var data_target = 'sm'+index;
+				$('#'+index).html("<div class=\"panel list-group\"><a href=\"#\" data-toggle=\"collapse\" data-target="+"#"+data_target+" data-parent=\"#menu\">"+forecast[index].date+"</a><div id="+data_target+" class=\"sublinks collapse\"><div class=\"label\">High</div><div class=\"input-data\">"+forecast[index].high+"</div><div class=\"label\">Low</div><div class=\"input-data\">"+forecast[index].low+"</div><div class=\"label\">Conditions</div><div class=\"input-data\">"+forecast[index].text+"</div></div></div>");
+				}
 			$('#tempday').show("slow");
 			hideSpinnerHandler();
 		});
